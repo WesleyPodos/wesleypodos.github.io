@@ -26,6 +26,11 @@ function setUserName() {
     } else {
         localStorage.setItem("name", myName);
         myHeading.textContent = `Net Worth Forecaster, built for ${myName}`;
+
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = myName;
+        nameSpan.style.fontWeight = "bold";
+        myHeading.appendChild(nameSpane);
     }
     
 }
